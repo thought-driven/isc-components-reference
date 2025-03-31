@@ -19,13 +19,13 @@ To enable custom components on a new page, follow these steps:
 4. [Button](#button)
 5. [CenterText](#centertext)
 6. [CenteredEmbed](#centeredembed)
-7. [Heading](#heading)
-8. [Footnote](#footnote)
-9. [Header](#header)
+7. [Footnote](#footnote)
+8. [Header](#header)
+9. [Heading](#heading)
 10. [Paragraph](#paragraph)
 11. [Sticky2Column](#sticky2column)
-12. [Sticky2ColumnEmbed](#sticky2columnembed)
-13. [Sticky2ColumnSidebar](#sticky2columnsidebar)
+12. [Sticky2ColumnSidebar](#sticky2columnsidebar)
+13. [25-75Embed](#25-75embed)
 14. [TableOfContents](#tableofcontents)
 15. [TextWithImage](#textwithimage)
 16. [Tooltip](#tooltip)
@@ -47,6 +47,8 @@ To enable custom components on a new page, follow these steps:
   </div>
 </div>
 ```
+
+- The **data-image** div is optional
 
 ## Authors
 
@@ -128,6 +130,8 @@ To enable custom components on a new page, follow these steps:
 </div>
 ```
 
+- Pull quote **span** is optional
+
 ## CenteredEmbed
 
 ![Image](https://github.com/user-attachments/assets/9cabd0a3-24e4-457f-9929-a45706d0e0bf)
@@ -148,18 +152,8 @@ To enable custom components on a new page, follow these steps:
 </div>
 ```
 
-## Heading
-
-![Image](https://github.com/user-attachments/assets/91734352-e0c3-4426-ba34-9da1f0c33af2)
-
-```html
-<div class="isc-chapter-heading">
-  <div class="data">
-    <div data-margins data-margin-top="80px" data-margin-bottom="80px"></div>
-    <div data-title>Occupation Trends Across the Workforce</div>
-  </div>
-</div>
-```
+- The **data-flip** div controls the order of the centered embed.
+  A _false_ sets the text content first, and the embed second; _true_ flips the order.
 
 ## Footnote
 
@@ -202,6 +196,21 @@ Like the table of contents component, or the tooltip component, it does not need
 </div>
 ```
 
+## Heading
+
+![Image](https://github.com/user-attachments/assets/91734352-e0c3-4426-ba34-9da1f0c33af2)
+
+```html
+<div class="isc-chapter-heading">
+  <div class="data">
+    <div data-margins data-margin-top="80px" data-margin-bottom="80px"></div>
+    <div data-title>Occupation Trends Across the Workforce</div>
+  </div>
+</div>
+```
+
+- The **data-margins** div is optional. If removed, margins will be 0px.
+
 ## Paragraph
 
 ![Image](https://github.com/user-attachments/assets/fb17a605-8235-4a6c-a589-6d4b0a412e40)
@@ -219,6 +228,8 @@ Like the table of contents component, or the tooltip component, it does not need
   </div>
 </div>
 ```
+
+- The **data-margins** div is optional. If removed, margins will be 0px.
 
 ## Sticky2Column
 
@@ -254,28 +265,10 @@ Like the table of contents component, or the tooltip component, it does not need
 </div>
 ```
 
-## 25/75 Embed
-
-![Image](https://github.com/user-attachments/assets/e96d94e5-802e-4ef2-a214-45975a1772bd)
-
-```html
-<div class="isc-sticky-2-column-embed">
-  <div class="data">
-    <div data-flip data-flip-columns="true"></div>
-    <div
-      data-embed
-      data-iframe-url="https://datawrapper.dwcdn.net/ graphcode"
-    ></div>
-    <div data-content>
-      <p>
-        Home Health Aides make up most of New York State's human services
-        workforce (Figure 7). Health Aide, Nursing Assistant, or Childcare
-        Worker.<sup isc-footnote-sup>vi</sup>
-      </p>
-    </div>
-  </div>
-</div>
-```
+- The **data-flip** div controls the order of the sticky 2-column.
+  A _false_ sets the text content on the left, and the viz column on the right second; _true_ flips the order.
+- The **data-mobile** div controls the placement of the viz on mobile. A value of 2 sets the viz after the first 2 content paragraphs.
+- The **data-width** div controls the sizes of the column in percentage. A value of 50 splits the columns equally. A value of 40, sets the left column size 40% of the total width, and the right column 60% of the width.
 
 ## Sticky2ColumnSidebar
 
@@ -308,6 +301,34 @@ Like the table of contents component, or the tooltip component, it does not need
   </div>
 </div>
 ```
+
+- The **data-margins** div is optional. If removed, margins will be 0px.
+
+## 25-75Embed
+
+![Image](https://github.com/user-attachments/assets/e96d94e5-802e-4ef2-a214-45975a1772bd)
+
+```html
+<div class="isc-sticky-2-column-embed">
+  <div class="data">
+    <div data-flip data-flip-columns="true"></div>
+    <div
+      data-embed
+      data-iframe-url="https://datawrapper.dwcdn.net/ graphcode"
+    ></div>
+    <div data-content>
+      <p>
+        Home Health Aides make up most of New York State's human services
+        workforce (Figure 7). Health Aide, Nursing Assistant, or Childcare
+        Worker.<sup isc-footnote-sup>vi</sup>
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+- The **data-flip** div controls the order of the sticky 2-column.
+  A _false_ sets the text content on the left, and the viz column on the right second; _true_ flips the order.
 
 ## TableOfContents
 
