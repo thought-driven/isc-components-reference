@@ -103,6 +103,7 @@ To enable custom components on a new page, follow these steps:
 ```html
 <div class="isc-button">
   <div class="data">
+    <div data-margins data-margin-top="0px" data-margin-bottom="70px"></div>
     <div
       data-button
       data-button-text="DOWNLOAD A PDF OF THE REPORT"
@@ -111,6 +112,8 @@ To enable custom components on a new page, follow these steps:
   </div>
 </div>
 ```
+
+- The **data-margins** div is optional. If removed, margins will be 0px.
 
 ## CenterText
 
@@ -130,6 +133,7 @@ To enable custom components on a new page, follow these steps:
 </div>
 ```
 
+- The **data-margins** div is optional. If removed, margins will be 0px.
 - Pull quote **span** is optional
 
 ## CenteredEmbed
@@ -140,6 +144,7 @@ To enable custom components on a new page, follow these steps:
 <div class="isc-centered-embed">
   <div class="data">
     <div data-flip data-flip-columns="false"></div>
+    <div data-margins data-margin-top="0px" data-margin-bottom="70px"></div>
     <div
       data-embed
       data-iframe-url="https://datawrapper.dwcdn.net/graphcode"
@@ -152,6 +157,7 @@ To enable custom components on a new page, follow these steps:
 </div>
 ```
 
+- The **data-margins** div is optional. If removed, margins will be 0px.
 - The **data-flip** div controls the order of the centered embed.
   A _false_ sets the text content first, and the embed second; _true_ flips the order.
 
@@ -240,6 +246,7 @@ Like the table of contents component, or the tooltip component, it does not need
   <div class="data">
     <div data-flip data-flip-columns="false"></div>
     <div data-width data-text-width-percent="50"></div>
+    <div data-margins data-margin-top="0px" data-margin-bottom="70px"></div>
     <div data-mobile data-viz-position="2"></div>
     <div data-viz data-viz-url="https://image-url"></div>
     <div data-viz-overlay-text>
@@ -265,6 +272,7 @@ Like the table of contents component, or the tooltip component, it does not need
 </div>
 ```
 
+- The **data-margins** div is optional. If removed, margins will be 0px.
 - The **data-flip** div controls the order of the sticky 2-column.
   A _false_ sets the text content on the left, and the viz column on the right second; _true_ flips the order.
 - The **data-mobile** div controls the placement of the viz on mobile. A value of 2 sets the viz after the first 2 content paragraphs.
