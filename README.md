@@ -382,6 +382,7 @@ Unlike other components, it:
 ## Tooltip
 
 ![Image](https://github.com/user-attachments/assets/deb6ffb9-b1f1-493d-8c95-6f828e5d0bc5)
+
 The tooltip component can be embedded inside other components like isc-header.
 Like the table of contents component, or the footnote component, it does not need its own code block.
 
