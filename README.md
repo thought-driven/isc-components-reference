@@ -147,7 +147,7 @@ To enable custom components on a new page, follow these steps:
     <div data-margins data-margin-top="0px" data-margin-bottom="70px"></div>
     <div
       data-embed
-      data-iframe-url="https://datawrapper.dwcdn.net/graphcode"
+      data-iframe-url="https://datawrapper.dwcdn.net/7Q2A7/10/"
     ></div>
     <div data-content>
       <p>First Paragraph</p>
@@ -322,7 +322,7 @@ Like the table of contents component, or the tooltip component, it does not need
     <div data-flip data-flip-columns="true"></div>
     <div
       data-embed
-      data-iframe-url="https://datawrapper.dwcdn.net/ graphcode"
+      data-iframe-url="https://datawrapper.dwcdn.net/7Q2A7/10/"
     ></div>
     <div data-content>
       <p>
